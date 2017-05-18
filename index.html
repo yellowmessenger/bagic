@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Latest compiled and minified CSS -->
+    <title>VHIBA</title>
+    <style>
+        .bot-container{
+            height: 350px;
+            margin-top: 20px;
+        }
+        @media screen and (max-device-width: 640px) {
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            .bot-container{
+                height: calc(100% - 50px);
+                height: -webkit-calc(100% - 50px);
+                height: -moz-calc(100% - 50px);
+                margin-top: 0;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="" style="text-align:center">
+            <img style="height: 50px" src="https://bpvault.blob.core.windows.net/uploads/Ltbymbm6xSDn1495083450645.png"/>
+    </div>
+<div id="bot-container" class="bot-container">
+    <div style="height: 100%; margin:auto" id="adsByBotplatform-bot_1493214269480"></div>
+    <script src="https://chat.botplatform.io/plugin-ad-v1.js?bot=bot_1493214269480&input=true&showTitle=false&skin=mobile" async defer> </script>
+</div>
+<script type="text/javascript">
+        if (window.navigator.userAgent.toLowerCase().indexOf('iphone') != -1) {
+                document.getElementById ("bot-container").style.height = "calc(100% - 80px)"
+        }
+</script>
+
+</body>
+</html>
