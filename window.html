@@ -36,7 +36,31 @@
 
 <div id="bot-container" class="bot-container">
     <div style="height: 100%; margin:auto" id="adsByBotplatform-bot_1493214269480"></div>
-    <script src="https://chat.botplatform.io/plugin-ad-v1.js?bot=bot_1493214269480&input=true&showTitle=false&skin=mobile" async defer> </script>
+    <!--script src="https://chat.botplatform.io/plugin-ad-v1.js?bot=bot_1493214269480&input=true&showTitle=false&skin=mobile" async defer> </script-->
+    <!--New Script added-->
+    <script type="text/javascript">
+        window.ymConfig = {
+            bot: "x1545990145814",
+            autoOpen: true
+        };
+
+        (function () {
+            var w = window, ic = w.YellowMessenger;
+            if ("function" === typeof ic)
+                ic("reattach_activator"), ic("update", ymConfig);
+            else {
+                var d = document, i = function () { i.c(arguments) };
+                function l() {
+                    var e = d.createElement("script");
+                    e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/mobile.js";
+                    var t = d.getElementsByTagName("script")[0];
+                    t.parentNode.insertBefore(e, t)
+                }
+                i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
+            }
+        })();
+    </script>
+    <!--New Script ends-->
 </div>
 <script type="text/javascript">
         if (window.navigator.userAgent.toLowerCase().indexOf('iphone') != -1) {
